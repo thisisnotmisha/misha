@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Misha's stuffs</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Impact, Arial Black, sans-serif;
+      background: #f2f2f2;
+      color: #111;
+      padding: 40px;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          rgba(0,0,0,0.04),
+          rgba(0,0,0,0.04) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    a {
+      color: #111;
+      text-decoration: underline;
+    }
+
+    /* HEADER */
+    .name {
+      font-size: clamp(3rem, 9vw, 7rem);
+      line-height: 0.9;
+      letter-spacing: -3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      max-width: 500px;
+      margin-bottom: 60px;
+    }
+
+    /* SECTIONS */
+    section {
+      border-top: 5px solid #111;
+      padding-top: 30px;
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin: 0 0 20px 0;
+      letter-spacing: -1px;
+    }
+
+    .content {
+      font-family: "Times New Roman", serif;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 700px;
+    }
+
+    /* LIST STYLE */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    li::before {
+      content: "■";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    /* TAPE / LABEL LOOK */
+    .label {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    /* RANDOM ROTATION FOR GRUNGE */
+    .tilt {
+      transform: rotate(-1.5deg);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 5px solid #111;
+      padding-top: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="name">THIS IS MISHA</div>
+  <div class="tagline">
+    And this is everything about me.
+  </div>
+
+  <!-- ABOUT -->
+  <section class="tilt">
+    <span class="label">ABOUT</span>
+    <h2>Who I Am</h2>
+    <div class="content">
+      A INFORMATION SYSTEM student of The University of Southern Mindanao, a backing vocals of ECHO.EXE
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section>
+    <span class="label">HOBBIES</span>
+    <h2>Things I Do</h2>
+    <div class="content">
+      <ul>
+        <li>Fishing</li>
+        <li>Designing random stuff</li>
+        <li>Listening to music</li>
+        <li>Overthinking everything</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="tilt">
+    <span class="label">MUSIC</span>
+    <h2>What I Listen To</h2>
+    <div class="content">
+      <ul>
+        <li>Meshuggah and Sepultura</li>
+        <li>I love metal and listening to metal</li>
+        <li>Ratamahatta</li>
+        <li>I hate radiohead(in a good way)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOD -->
+  <section>
+    <span class="label">FOOD</span>
+    <h2>Favorite Food</h2>
+    <div class="content">
+      <ul>
+        <li>Adobo</li>
+        <li>Sinigang</li>
+        <li>Egg Salad</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LIKES -->
+  <section class="tilt">
+    <span class="label">LIKES</span>
+    <h2>Things I Like</h2>
+    <div class="content">
+      <ul>
+        <li>Rainy days</li>
+        <li>Mountains</li>
+        <li>Sunset</li>
+        <li>People than understands me</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>
